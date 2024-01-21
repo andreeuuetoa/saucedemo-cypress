@@ -3,5 +3,5 @@
 ## Setting up tests:
 In the root folder: 
 ```bash
-cypress open
+npx cypress open
 ```
