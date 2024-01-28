@@ -1,8 +1,8 @@
-describe('Home page test', () => {
-  it('passes', () => {
+describe('Home page loads', () => {
+  it('checks that the home page loads', () => {
     cy.visit('https://www.saucedemo.com/')
 
-    cy.get(".login_logo").contains("Swag Labs");
+    cy.get('.login_logo').contains('Swag Labs');
   })
 })
 
