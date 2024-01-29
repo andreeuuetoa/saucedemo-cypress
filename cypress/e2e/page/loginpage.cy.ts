@@ -4,8 +4,6 @@ describe('Login tests', () => {
   });
 
   it('shows the products page', () => {
-    cy.visit('https://www.saucedemo.com/');
-
     cy.get('#user-name').type('standard_user');
     cy.get('#password').type('secret_sauce');
     cy.get('#login-button').click();
@@ -14,8 +12,6 @@ describe('Login tests', () => {
   });
 
   it('shows the error message: incorrect credentials', () => {
-    cy.visit('https://www.saucedemo.com');
-
     cy.get('#user-name').type('standard_user');
     cy.get('#password').type('wrong_password');
     cy.get('#login-button').click();
@@ -25,8 +21,6 @@ describe('Login tests', () => {
   });
 
   it('shows the error message: user is locked out', () => {
-    cy.visit('https://www.saucedemo.com');
-
     cy.get('#user-name').type('locked_out_user');
     cy.get('#password').type('secret_sauce');
     cy.get('#login-button').click();
