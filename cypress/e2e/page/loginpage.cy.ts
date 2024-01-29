@@ -11,9 +11,9 @@ describe('Login tests', () => {
     cy.get('#login-button').click();
 
     cy.get('.title').contains('Products');
-  })
+  });
 
-  it('Shows the error message', () => {
+  it('Shows the error message: incorrect credentials', () => {
     cy.visit('https://www.saucedemo.com');
 
     cy.get('#user-name').type('standard_user');
@@ -22,5 +22,5 @@ describe('Login tests', () => {
 
     const errorMessage = 'Epic sadface: Username and password do not match any user in this service';
     cy.get('.error-message-container').contains(errorMessage);
-  })
+  });
 });
