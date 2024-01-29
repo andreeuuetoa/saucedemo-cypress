@@ -1,15 +1,13 @@
-describe('Home page loads', () => {
-  it('checks that the home page loads', () => {
-    cy.visit('https://www.saucedemo.com/')
+describe('Home page tests', () => {
+  beforeEach(() => {
+    cy.visit('https://www.saucedemo.com');
+  });
 
+  it('checks that the home page loads', () => {
     cy.get('.login_logo').contains('Swag Labs');
   })
-})
 
-describe('Log in from home page', () => {
   it('checks for log-in form on the home page', () => {
-    cy.visit('https://www.saucedemo.com');
-
     cy.get('#user-name').type('standard_user');
   })
 });
