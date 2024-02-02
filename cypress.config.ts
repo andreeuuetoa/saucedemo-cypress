@@ -5,6 +5,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    experimentalRunAllSpecs: true
+    experimentalRunAllSpecs: true,
+    specPattern: "cypress/ui-tests/**/*.cy.{ts,tsx}"
   },
 });
