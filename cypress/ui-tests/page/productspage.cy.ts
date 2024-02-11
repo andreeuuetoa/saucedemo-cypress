@@ -1,6 +1,6 @@
 describe('Products page tests', () => {
   beforeEach(() => {
-    cy.visit('https://www.saucedemo.com');
+    cy.visit('/');
 
     cy.get('#user-name').type('standard_user');
     cy.get('#password').type('secret_sauce');

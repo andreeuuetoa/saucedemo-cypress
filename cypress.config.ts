@@ -6,6 +6,7 @@ export default defineConfig({
       // implement node event listeners here
     },
     experimentalRunAllSpecs: true,
-    specPattern: "cypress/ui-tests/**/*.cy.{ts,tsx}"
+    specPattern: "cypress/ui-tests/**/*.cy.{ts,tsx}",
+    baseUrl: "https://www.saucedemo.com/"
   },
 });

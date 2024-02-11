@@ -1,6 +1,6 @@
 describe('Login tests', () => {
   beforeEach(() => {
-    cy.visit('https://www.saucedemo.com');
+    cy.visit('/');
   });
 
   it('shows the products page', () => {
