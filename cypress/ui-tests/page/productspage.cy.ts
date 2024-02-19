@@ -18,4 +18,9 @@ describe('Products page tests', () => {
   it('the cart is initially empty', () => {
     cy.get('.shopping_cart_link').should('be.empty');
   });
+
+  it('clicking on "Add to cart" fills the cart', () => {
+    cy.get('#add-to-cart-sauce-labs-backpack').click();
+    cy.get('.shopping_cart_link').should('not.be.empty');
+  });
 });
