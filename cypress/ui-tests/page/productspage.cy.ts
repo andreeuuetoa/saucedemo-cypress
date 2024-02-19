@@ -14,4 +14,8 @@ describe('Products page tests', () => {
   it('shows the products page title', () => {
     cy.get('.title').contains('Products');
   });
+
+  it('the cart is initially empty', () => {
+    cy.get('.shopping_cart_link').should('be.empty');
+  });
 });
